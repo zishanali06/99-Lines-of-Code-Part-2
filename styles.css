@@ -17,4 +17,6 @@ p{
     border: 1px solid black;
     width: 30em;
     padding: 1em;
+    align-items: center;
+    margin: 0 auto;
 }

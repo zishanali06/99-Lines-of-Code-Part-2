@@ -5,7 +5,7 @@ function sing(){
     let i = 0;
     while (i < friends.length) {
         let div = document.createElement('div');
-        div.className = ('friend');
+        div.className = ('friend col-12');
         let h3 = document.createElement('h3');
         
         document.body.appendChild(div);
@@ -17,7 +17,11 @@ function sing(){
 
         for (count = 99; count >= 0; count--) {
             let oneless = count - 1;
-            console.log(count + " lines of code in the file, " + count + " lines of code; " + friends[i] + " strikes one out, clears it all out, " + oneless + " lines of code in the file");
+            let para = document.createElement('p');
+            let paratext = document.createTextNode(count + " lines of code in the file, " + count + " lines of code; " + friends[i] + " strikes one out, clears it all out, " + oneless + " lines of code in the file")
+            
+            div.appendChild(para);
+            para.appendChild(paratext);
         };
         i++;
     };
