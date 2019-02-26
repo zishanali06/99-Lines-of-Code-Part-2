@@ -1,0 +1,20 @@
+body{
+    background-color: aqua;
+    text-align: center;
+}
+h1{
+    color: darkblue;
+}
+.friends{
+    background-color: coral;
+}
+.friends > h3{
+    text-transform: uppercase;
+}
+p{
+    position: relative;
+    display: block;
+    border: 1px solid black;
+    width: 30em;
+    padding: 1em;
+}
